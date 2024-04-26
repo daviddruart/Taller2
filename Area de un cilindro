@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    
+    float radio, altura, areabase, arealateral, areatotal;
+
+    printf("Bienvenido, calcula el área de un cilindro\n ");
+    printf("Ingrese el RADIO del cilindro: ");
+    scanf("%f", &radio);
+
+    printf("Ingrese la ALTURA del trapezoide: ");
+    scanf("%f", &altura);
+
+    // Calcular el área de la base del cilindro
+    areabase = 3.14159 * radio * radio;
+ 
+    // Calcular el área lateral del cilindro
+    arealateral = 2 * 3.14159 * radio * altura;
+
+    // Calcular el área total del cilindro
+    areatotal = 2 * areabase + arealateral;
+    
+    printf("El área del cilindro es: %.2f\n", areatotal);
+
+    return 0;
+}
