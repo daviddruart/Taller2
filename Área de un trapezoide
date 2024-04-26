@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    // Declaración de variables
+    double base1, base2, altura, area;
+
+    // Solicitar al usuario que ingrese la longitud de las bases y la altura
+    printf("Bienvenido, calcula el área de un trapezoide\n ");
+    printf("Ingrese la longitud de la BASE MAYOR del trapezoide: ");
+    scanf("%lf", &base1);
+    printf("Ingrese la longitud de la BASE MENOR del trapezoide: ");
+    scanf("%lf", &base2);
+    printf("Ingrese la ALTURA del trapezoide: ");
+    scanf("%lf", &altura);
+
+    // Calcular el área del trapezoide
+    area = ((base1 + base2) * altura) / 2;
+
+    // Mostrar el resultado
+    printf("El área del trapezoide es: %.2lf\n", area);
+
+    return 0;
+}
